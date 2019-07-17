@@ -36,7 +36,6 @@ class ViewController: UIViewController {
             case let .Success(сities):
                 self?.cities = сities
                 self?.cancelButton(true)
-                print("\(String(describing: self!.cities.first?.deg))")
                 
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")

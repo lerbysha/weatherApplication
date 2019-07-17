@@ -35,8 +35,7 @@ class TableViewController: UITableViewController {
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         
         cities = weather.getAll(with: City.self) ?? []
-        print(cities.count)
-        print(" sdfnm")
+
         self.tableView.reloadData()
         refreshControl.endRefreshing()
     }
